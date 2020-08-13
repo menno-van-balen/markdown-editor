@@ -64,6 +64,11 @@ header {
   font-size: 16px;
 }
 
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(150, 150, 170);
+}
+
 textarea {
   width: 95%;
   padding: 1em;
