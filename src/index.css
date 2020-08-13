@@ -1,0 +1,104 @@
+body {
+  background-color: rgb(126, 98, 75);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+header {
+  width: auto;
+  background-color: rgb(170, 130, 97);
+}
+
+.header-tittle {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4em 0 4em;
+  margin-bottom: 0em;
+}
+
+.credits {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.editor-wrapper {
+  /* display: flex; */
+  width: 100%;
+}
+
+.editor-container {
+  margin: 1em;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px 15px 10px rgba(0, 0, 0, 0.411);
+}
+
+.editor-header {
+  padding-left: 1em;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(170, 130, 97);
+  text-shadow: -1px 0 rgba(129, 129, 129, 0.753),
+    0 1px rgba(129, 129, 129, 0.753), 1px 0 rgba(129, 129, 129, 0.753),
+    0 -1px rgba(129, 129, 129, 0.753);
+}
+
+.button {
+  margin: 5px;
+  background-color: rgba(61, 58, 58, 0.897);
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 1px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+textarea {
+  width: 95%;
+  padding: 1em;
+}
+
+.preview-container {
+  margin: 15px;
+  background-color: rgb(255, 255, 255);
+  /* padding-left: 1em; */
+  /* background-color: teal; */
+  box-shadow: 10px 10px 15px 10px rgba(0, 0, 0, 0.411);
+  /* width: 100%; */
+}
+
+.preview-header {
+  background-color: rgb(170, 130, 97);
+  text-shadow: -1px 0 rgba(129, 129, 129, 0.753),
+    0 1px rgba(129, 129, 129, 0.753), 1px 0 rgba(129, 129, 129, 0.753),
+    0 -1px rgba(129, 129, 129, 0.753);
+  padding: 1px;
+  padding-left: 1em;
+}
+
+.content {
+  padding: 1em;
+}
+
+@media (min-width: 760px) {
+  .editor-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  textarea,
+  .content {
+    width: 30vw;
+  }
+}
